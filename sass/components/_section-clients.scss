@@ -1,6 +1,8 @@
 .clients {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding: 94px 0;
+  @media screen and(max-width:1199px) {
+padding: 60px 0;
+}
   &__title {
     margin: 0;
 
@@ -15,12 +17,21 @@
   &__list {
     list-style: none;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 
     padding-left: 0;
-    margin-top: 50px;
+    margin-top: 0;
     margin-bottom: 0;
+  @media screen and(max-width:1199px) {
+    
+    margin-left: -30px;
+  }
+  @media screen and(min-width:1200px) {
+flex-wrap: nowrap;
+margin-top: 50px;
+  }
   }
 }
 .clients__link {
@@ -33,6 +44,14 @@
   border-radius: 4px;
   fill: #afb1b8;
   transition: fill 250ms $timing-function, background-color 250ms $timing-function;
+  @media screen and(max-width:480px) {
+    width: 210px;
+  }
+  @media screen and(min-width:768px) and(max-width:1199px) {
+    width: 226px;
+  }
+  
+
   &:hover,
   &:focus {
     border: 1px solid $accent-color;
@@ -42,9 +61,68 @@
     transition: fill 250ms $timing-function;
   }
 }
-.clients__item + .clients__item {
+.clients__item + .clients__item{
+  @media screen and(min-width:1200px) {
   margin-left: 30px;
+  }
+}
+.clients__item {
+  @media screen and(max-width:1199px) {
+    margin-top: 30px;
+    margin-left: 30px;
+  }
 }
 .clients__icon {
   transition: fill 250ms $timing-function, background-color 250ms $timing-function;
 }
+
+// .clients {
+//   padding-top: 94px;
+//   padding-bottom: 94px;
+//   &__title {
+//     margin: 0;
+
+//     font-style: normal;
+//     font-weight: 700;
+//     font-size: 36px;
+//     line-height: 1.17;
+//     text-align: center;
+//     letter-spacing: 0.03em;
+//     color: $title-text-color;
+//   }
+//   &__list {
+//     list-style: none;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+
+//     padding-left: 0;
+//     margin-top: 50px;
+//     margin-bottom: 0;
+//   }
+// }
+// .clients__link {
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   width: 170px;
+//   height: 92px;
+//   border: 1px solid #afb1b8;
+//   border-radius: 4px;
+//   fill: #afb1b8;
+//   transition: fill 250ms $timing-function, background-color 250ms $timing-function;
+//   &:hover,
+//   &:focus {
+//     border: 1px solid $accent-color;
+
+//     fill: $accent-color;
+
+//     transition: fill 250ms $timing-function;
+//   }
+// }
+// .clients__item + .clients__item {
+//   margin-left: 30px;
+// }
+// .clients__icon {
+//   transition: fill 250ms $timing-function, background-color 250ms $timing-function;
+// }
