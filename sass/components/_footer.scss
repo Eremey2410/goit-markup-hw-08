@@ -179,9 +179,13 @@
     border-radius: 4px;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     cursor: pointer;
-    @media screen and(max-width:1199px) {
+    @media screen and(max-width:767px) {
       margin-bottom: 20px;
-      width: 450px;
+      width:calc(100% - 0px);
+    }
+    @media screen and (min-width: 768px) and (max-width:1199px) {
+     margin-bottom: 20px;
+     width: 450px;
     }
   }
 }
