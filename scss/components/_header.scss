@@ -64,13 +64,13 @@
     border: none;
     background-color: transparent;
     cursor: pointer;
-    & .icon-cross {
+    & .icon-menu {
       display: none;
     }
-    &.is-open .icon-cross {
+    &.is-open .icon-menu {
       display: block;
     }
-    &.is-open .icon-menu {
+    &.is-open .icon-cross {
       display: none;
     }
   }

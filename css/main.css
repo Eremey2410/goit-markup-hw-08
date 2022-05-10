@@ -194,15 +194,15 @@ body {
   }
 }
 
-.nav__btn .icon-cross {
+.nav__btn .icon-menu {
   display: none;
 }
 
-.nav__btn.is-open .icon-cross {
+.nav__btn.is-open .icon-menu {
   display: block;
 }
 
-.nav__btn.is-open .icon-menu {
+.nav__btn.is-open .icon-cross {
   display: none;
 }
 
